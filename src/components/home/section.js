@@ -17,7 +17,7 @@ export default class Section extends Component {
       return <section className="day-section">
           <h3 className="day-section-title">{this.props.title}</h3>
           <p className="day-section-subtitle">{this.props.subtitle}</p>
-          <button className="day-section-button">Book</button>
+          <span className="day-section-button">Book</span>
         </section>;
   }
 }

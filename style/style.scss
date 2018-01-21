@@ -1,3 +1,128 @@
-header {
-    background-color: grey;
+// Variables
+$full-width: 100%;
+$half-width: 50%;
+$third-width: 33.33%;
+
+$dark: #181818;
+$light: #FFFFFF;
+
+$font-one: 'Supermercado One', cursive;
+$font-two: 'Rock Salt', cursive;
+$font-three: 'Sedgwick Ave Display', cursive;
+$font-four: 'Romanesco', cursive;
+
+* {
+    box-sizing: border-box;
+}
+p, h1, h3 {
+    margin: 0px;
+}
+
+body, .container {
+    margin: 0px !important;
+    padding: 0px !important;
+    max-width: initial !important;
+}
+
+.home {
+    width: $full-width;
+    max-width: $full-width;
+    min-width: $full-width;
+    .home-sections {
+        padding: 0px 15px;
+        width: $full-width;
+        max-width: $full-width;
+        min-width: $full-width;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.header {
+    width: $full-width;
+    max-width: $full-width;
+    min-width: $full-width;
+    height: 80vh;
+    min-height: 300px;
+    background-color: $dark;
+    color: $light;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-four;
+    font-size: 35px;
+}
+
+.day-section {
+    padding: 75px 10px;
+    flex-basis: $third-width;
+    width: $third-width;
+    max-width: $third-width;
+    min-width: $third-width;
+    color: $dark;
+    .day-section-title {
+        text-align: center;
+        margin: 0px;
+        font-size: 24px;
+    }
+    .day-section-subtitle {
+        padding-bottom: 15px;
+        text-align: center;
+        margin: 0px;
+    }
+    .day-section-button {
+        padding: 6px 12px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95px;
+        max-width: 95px;
+        min-width: 95px;
+        text-align: center;
+        display: block;
+        border: 1px solid $dark;
+        color: $dark;
+        transition: background-color 120ms ease-in-out;
+        &:hover {
+            cursor: pointer;
+            background-color: $dark;
+            color: $light;
+        }
+    }
+}
+
+.bio {
+    width: $full-width;
+    max-width: $full-width;
+    min-width: $full-width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: $dark;
+    .bio-about {
+        padding: 10px 15px;
+        flex-basis: $half-width;
+        width: $half-width;
+        max-width: $half-width;
+        min-width: $half-width;
+        .bio-about-text {
+            font-size: 20px;
+        }
+    }
+    .bio-info {
+        padding: 10px 15px;
+        flex-basis: $half-width;
+        width: $half-width;
+        max-width: $half-width;
+        min-width: $half-width;
+        .bio-info-text {
+
+        }
+    }
+    .bio-title {
+        font-size: 30px;
+    }
 }

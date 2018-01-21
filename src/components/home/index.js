@@ -9,11 +9,13 @@ export default class Home extends Component {
     // }
 
     render() {
-        return <div>
+        return <div className="home">
             <Header />
-            <Section title="Morning Appointments" subtitle="(9:00am - 12:00pm)" btnLink="" />
-            <Section title="Afternoon Appointments" subtitle="(1:00pm - 3:00pm)" btnLink="" />
-            <Section title="Evening Appointments" subtitle="(3:00pm - 6:00pm)" btnLink="" />
+            <div className="home-sections">
+                <Section title="Morning Appointments" subtitle="(9:00am - 12:00pm)" btnLink="" />
+                <Section title="Afternoon Appointments" subtitle="(1:00pm - 3:00pm)" btnLink="" />
+                <Section title="Evening Appointments" subtitle="(3:00pm - 6:00pm)" btnLink="" />
+            </div>
             <Bio />
           </div>;
     }
