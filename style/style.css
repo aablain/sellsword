@@ -7,7 +7,8 @@ p, h1, h3 {
 body, .container {
   margin: 0px !important;
   padding: 0px !important;
-  max-width: initial !important; }
+  max-width: initial !important;
+  font-family: "Open Sans", sans-serif; }
 
 .home {
   width: 100%;
@@ -41,9 +42,12 @@ body, .container {
   align-items: center;
   font-family: "Romanesco", cursive;
   font-size: 35px; }
+  @media screen and (max-width: 500px) {
+    .header {
+      font-size: 25px; } }
 
 .day-section {
-  padding: 75px 10px;
+  padding: 90px 10px;
   flex-basis: 33.33%;
   width: 33.33%;
   max-width: 33.33%;
