@@ -60,7 +60,8 @@ body, .container {
   .day-section .day-section-subtitle {
     padding-bottom: 15px;
     text-align: center;
-    margin: 0px; }
+    margin: 0px;
+    font-size: 22px; }
   .day-section .day-section-button {
     padding: 6px 12px;
     margin-left: auto;
