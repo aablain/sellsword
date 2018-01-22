@@ -15,6 +15,7 @@ $font-normal: 'Open Sans', sans-serif;
 $small-screen: 900px;
 $tablet: 768px;
 $phone: 500px;
+$tiny-phone: 345px;
 
 * {
     box-sizing: border-box;
@@ -133,6 +134,14 @@ body, .container {
         width: $full-width;
         max-width: $full-width;
         min-width: $full-width;
+    }
+    @media screen and (max-width: $tiny-phone) {
+        .day-section-title {
+            font-size: 18px;
+        }
+        .day-section-subtitle {
+            font-size: 16px;
+        }
     }
 }
 
